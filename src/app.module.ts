@@ -11,7 +11,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
         username: 'user_db',
         password: 'pass_db',
         database: 'db_reports',
-        type: 'postgres'     
+        type: 'postgres' ,
+        entities: [
+            //__dirname + '/../**/*.entity{.ts,.js}',
+            'dist/**/*.entity{.ts,.js}',
+        ],
+        synchronize: true,
     })
   ],
   controllers: [AppController],
