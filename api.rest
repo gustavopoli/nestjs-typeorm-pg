@@ -4,3 +4,6 @@ Content-Type: application/json
 {
     "name": "Paulo Correia"
 }
+
+###
+GET http://localhost:3000/users
