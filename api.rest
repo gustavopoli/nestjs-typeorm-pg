@@ -10,3 +10,12 @@ GET http://localhost:3000/users
 
 ###
 GET http://localhost:3000/users/0960468c-315b-4ec5-b957-2f12f6e6e0c0
+
+
+###
+PATCH  http://localhost:3000/users/0960468c-315b-4ec5-b957-2f12f6e6e0c0
+Content-Type: application/json
+
+{
+    "name": "Joana Maria"
+}
